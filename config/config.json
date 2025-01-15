@@ -1,0 +1,29 @@
+{
+  "instanceName": "QA:DiskWriterTest::",
+  "RedisCache":{
+    "host" :"127.0.0.1",
+    "port" : "6379",
+    "username" : "",
+    "password" : ""
+  },
+  "RedisQueue":{
+    "host" :"127.0.0.1",
+    "port" : "6379",
+    "username" : "",
+    "password" :""
+  },
+  "application" :{
+    "workers" : "1",
+    "logPath":"./logs/files/",
+    "repushLogPath":"./logs/files/",
+    "ramWriterThresholdPercent" : 90,
+    "ramRepushThresholdPercent" : 88,
+    "monitorSleepTimeSeconds": 60,
+    "requeueSleepTimeSeconds": 4,
+    "redisConnectionTimeSeconds": 5,
+    "maxRepushProcesses": 3,
+    "repushWaitSeconds": 10,
+    "enableRepush": true,
+    "slackWebhook":"https://hooks.slack.com/"
+  }
+} 
